@@ -13,7 +13,6 @@
     />
     <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
     <!--------------------------------- HEADER ------------->
     <header class="header">
@@ -40,7 +39,8 @@
                     
                 </li>
                 <li class="header-item">
-                    <a href="Tel:+380961111111" class="header-tel link "><svg class="header-letter" width="10" height="16">
+                    <a href="Tel:+380961111111" class="header-tel link ">
+                        <svg class="header-letter" width="10" height="16">
                         <use href="./images/icons.svg#icon-phone"></use>
                       </svg> +380961111111 </a>
                 </li>
@@ -53,8 +53,8 @@
             <div class="conteiner">
                 <h1 class="hero-tittle"> Эффективные решения для вашего бизнеса
                 </h1>
-                <button type="button" class="hero-btn ">Заказать услугу</button>
-            </div>
+                <button type="button" class="hero-btn" data-modal-open   >Заказать услугу</button > 
+            </div> 
         </section>
         <!-----------------------------ADVANTAGE ---------------->
         <section class="advantage">
@@ -232,6 +232,15 @@
         </div>
 
     </footer>
+    <!-------------------- --------MODAL-------------------------->
+    <div class="backdrop is-hidden" data-modal> 
+        <div class="modal">
+        <button class="modal-button" type="button" data-modal-close>
+            <svg class="vector" width="11" height="11">
+            <use href="./images/symbol.svg#icon-vector"></use></svg></button>
+
+    </div></div>
+    <script src="./js/modal.js#icon-vector"></script>
 </body>
 
 </html>
