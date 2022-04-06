@@ -261,6 +261,23 @@ margin-bottom: 30px;
 
 .work-list {
     display: flex;
+    position: relative;
+}
+.work-top-text{
+    bottom: 0;
+    width: 370px;
+    height: 70px;
+    padding-top: 27px;
+    padding-bottom: 27px;
+    position: absolute;
+    font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+text-transform: uppercase;
+background: rgba(47, 48, 58, 0.8);
+color: var(--first-tittle-color);
 }
 
 .work-item:not(:last-child) {
@@ -582,8 +599,34 @@ border-radius: 100%;
     border: 1px solid #EEEEEE;
     width: 370px;
     min-height: 404px;
+    position: relative;
 }
+.projects-item:hover .project-top-text{
+    transform: translate(0);
+}
+.progect-item-top{
+    overflow: hidden;
+    position: relative;
+}
+.project-top-text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 67px;
+    padding-bottom: 63px;
+    color: var(--first-tittle-color);
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms ;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 
+}
 .projects-item:nth-last-child(3n+1) {
     margin-right: 0;
 }
@@ -612,3 +655,6 @@ border-radius: 100%;
     letter-spacing: 0.03em;
     color: var(--text-tittle-color);
 }
+
+<div class="progect-item-top"></div><p class="project-top-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+</div>
